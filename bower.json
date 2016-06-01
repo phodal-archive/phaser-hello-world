@@ -1,0 +1,20 @@
+{
+  "name": "phaser-spike",
+  "homepage": "https://github.com/phodal-archive/phaser-spike",
+  "authors": [
+    "Fengda HUANG <h@phodal.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "phaser-state-transition": "^2.0.3"
+  }
+}
