@@ -21,7 +21,14 @@ Growth.Game.prototype = {
   shuffle: function (answers) {
     return _.shuffle(answers);
   },
+  checkAnswer: function (otherAnswers, x, correctAnswer) {
+    console.log(otherAnswers, x, correctAnswer);
+    if(otherAnswers[x] === correctAnswer){
+      Growth.scoreText = Growth.scoreText + 10;
+    }
+  },
   drawAnswers: function (correctAnswer) {
+    var self = this;
     var otherAnswers = [];
     otherAnswers.push(correctAnswer);
 
@@ -35,19 +42,19 @@ Growth.Game.prototype = {
     otherAnswers = this.shuffle(otherAnswers);
 
     for (var i = 0; i < otherAnswers.length; i++) {
-      var anwserButtonStyle = {
+      var answerButtonStyle = {
         fontSize: "24px",
         fill: "#FFFFFF",
         wordWrap: true,
         wordWrapWidth: 400,
         align: "center"
       };
-      var answerButton = this.game.add.text(180 + (this.game.width - 180) / 3 * i, 250, otherAnswers[i], anwserButtonStyle);
+      var answerButton = this.game.add.text(180 + (this.game.width - 180) / 3 * i, 250, otherAnswers[i], answerButtonStyle);
       answerButton.smoothed = false;
       answerButton.inputEnabled = true;
       (function (x) {
         answerButton.events.onInputDown.add(function () {
-          console.log(x);
+          self.checkAnswer(otherAnswers, x, correctAnswer);
         }, this);
       })(i);
     }
