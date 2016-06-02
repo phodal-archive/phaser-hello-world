@@ -10,7 +10,6 @@ Growth.Game.prototype = {
       Growth.scoreText.kill();
     }
     var scoreFont = {
-      font: "2px 'Press Start 2P'",
       fontSize: "28px",
       fill: "#FFFFFF",
       wordWrap: true,
@@ -19,12 +18,28 @@ Growth.Game.prototype = {
     };
     Growth.scoreText = this.game.add.text(this.game.width - 140, 10, "Score: " + Growth.score, scoreFont);
   },
+  drawAnswers: function (correctAnswer) {
+    var otherAnswers = [];
+    otherAnswers.push(correctAnswer);
+
+    while (otherAnswers.length <= Math.min(3, Growth.languages.length) - 1) {
+      var temp = Growth.languages[Math.floor(Math.random() * Growth.languages.length)];
+      if (!_.includes(temp, otherAnswers)) {
+        otherAnswers.push(temp);
+      }
+    }
+    
+  },
   create: function () {
     this.drawScore();
     this.game.stage.backgroundColor = '#0072bc';
-    var html = this.game.cache.getText('language.C');
-    var text = html.split('\n');
-    this.renderText(text);
+    var choiceLanguage = 'C';
+
+    var currentLanguageOriginText = this.game.cache.getText('language.' + choiceLanguage);
+    var currentLanguageTextArray = currentLanguageOriginText.split('\n');
+
+    this.renderText(currentLanguageTextArray);
+    this.drawAnswers(choiceLanguage);
   },
 
   renderText: function (text) {

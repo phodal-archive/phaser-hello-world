@@ -10,10 +10,13 @@ Growth.Preloader.prototype = {
     this.load.text('language.Java', 'data/Java.Java');
     this.load.text('language.JavaScript', 'data/JavaScript.js');
     this.load.text('language.PHP', 'data/PHP.php');
+    Growth.languages = [
+      'C', 'CSS', 'HTML', 'Java', 'JavaScript', 'PHP'
+    ]
   },
   preload: function () {
     this.game.stage.backgroundColor = "#eee";
-    Growth.languages = this.loadLanguages();
+    this.loadLanguages();
     this.load.image('logo', 'images/logo.png');
   },
   create: function () {
