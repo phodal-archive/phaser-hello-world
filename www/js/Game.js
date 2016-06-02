@@ -18,6 +18,9 @@ Growth.Game.prototype = {
     };
     Growth.scoreText = this.game.add.text(this.game.width - 140, 10, "Score: " + Growth.score, scoreFont);
   },
+  shuffle: function (answers) {
+    return _.shuffle(answers);
+  },
   drawAnswers: function (correctAnswer) {
     var otherAnswers = [];
     otherAnswers.push(correctAnswer);
@@ -28,6 +31,9 @@ Growth.Game.prototype = {
         otherAnswers.push(temp);
       }
     }
+
+    otherAnswers = this.shuffle(otherAnswers);
+
     for (var i = 0; i < otherAnswers.length; i++) {
       var anwserButtonStyle = {
         fontSize: "24px",
@@ -36,14 +42,14 @@ Growth.Game.prototype = {
         wordWrapWidth: 400,
         align: "center"
       };
-      var answerButton = this.game.add.text(180 + (this.game.width - 180)/ 3 * i, 250, otherAnswers[i], anwserButtonStyle);
+      var answerButton = this.game.add.text(180 + (this.game.width - 180) / 3 * i, 250, otherAnswers[i], anwserButtonStyle);
       answerButton.smoothed = false;
       answerButton.inputEnabled = true;
-      (function(x) {
-        answerButton.events.onInputDown.add(function(){
+      (function (x) {
+        answerButton.events.onInputDown.add(function () {
           console.log(x);
         }, this);
-      }) (i);
+      })(i);
     }
   },
   create: function () {
