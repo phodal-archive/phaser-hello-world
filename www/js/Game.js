@@ -36,12 +36,12 @@ Growth.Game.prototype = {
         wordWrapWidth: 400,
         align: "center"
       };
-      var anwserButton = this.game.add.text(this.game.width / 3, i * 40 + 250, otherAnswers[i], anwserButtonStyle);
-      anwserButton.smoothed = false;
-      anwserButton.inputEnabled = true;
+      var answerButton = this.game.add.text(180 + (this.game.width - 180)/ 3 * i, 250, otherAnswers[i], anwserButtonStyle);
+      answerButton.smoothed = false;
+      answerButton.inputEnabled = true;
       (function(x) {
-        anwserButton.events.onInputDown.add(function(){
-
+        answerButton.events.onInputDown.add(function(){
+          console.log(x);
         }, this);
       }) (i);
     }
