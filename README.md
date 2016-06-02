@@ -2,6 +2,18 @@
 
 A Clone of [https://github.com/phodal/learning-ionic](https://github.com/phodal/learning-ionic), but use Phaser.
 
+
+Setup & Run
+---
+
+```
+npm install -g cordova
+```
+
+```
+cordova run android
+```
+
 License
 ---
 
