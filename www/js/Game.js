@@ -24,7 +24,7 @@ Growth.Game.prototype = {
 
     while (otherAnswers.length <= Math.min(3, Growth.languages.length) - 1) {
       var temp = Growth.languages[Math.floor(Math.random() * Growth.languages.length)];
-      if (!_.includes(temp, otherAnswers)) {
+      if (!_.includes(otherAnswers, temp)) {
         otherAnswers.push(temp);
       }
     }
