@@ -1,11 +1,19 @@
 Growth.Preloader = function (game) {
-  this.preloadBar = null;
   this.ready = false;
 };
 
 Growth.Preloader.prototype = {
+  loadLanguages: function () {
+    this.load.text('language.C', 'data/C.c');
+    this.load.text('language.CSS', 'data/CSS.css');
+    this.load.text('language.HTML', 'data/HTML.html');
+    this.load.text('language.Java', 'data/Java.Java');
+    this.load.text('language.JavaScript', 'data/JavaScript.js');
+    this.load.text('language.PHP', 'data/PHP.php');
+  },
   preload: function () {
     this.game.stage.backgroundColor = "#eee";
+    Growth.languages = this.loadLanguages();
     this.load.image('logo', 'images/logo.png');
   },
   create: function () {
