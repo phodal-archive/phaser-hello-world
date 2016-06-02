@@ -28,7 +28,23 @@ Growth.Game.prototype = {
         otherAnswers.push(temp);
       }
     }
-    
+    for (var i = 0; i < otherAnswers.length; i++) {
+      var anwserButtonStyle = {
+        fontSize: "24px",
+        fill: "#FFFFFF",
+        wordWrap: true,
+        wordWrapWidth: 400,
+        align: "center"
+      };
+      var anwserButton = this.game.add.text(this.game.width / 3, i * 40 + 250, otherAnswers[i], anwserButtonStyle);
+      anwserButton.smoothed = false;
+      anwserButton.inputEnabled = true;
+      (function(x) {
+        anwserButton.events.onInputDown.add(function(){
+
+        }, this);
+      }) (i);
+    }
   },
   create: function () {
     this.drawScore();
