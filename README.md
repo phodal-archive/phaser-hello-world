@@ -17,6 +17,8 @@ cordova run android
 License
 ---
 
+![Phodal Logo](http://brand.phodal.com/logo/small.svg)
+
 [![Phodal's Idea](http://brand.phodal.com/shields/idea-small.svg)](http://ideas.phodal.com/)
 
 © 2016 [Phodal Huang](https://www.phodal.com). This code is distributed under the CC0 1.0 Universal license. See `LICENSE` in this directory.
