@@ -2,6 +2,7 @@
 
 A Clone of [https://github.com/phodal/learning-ionic](https://github.com/phodal/learning-ionic), but use Phaser.
 
+![Phodal Logo](http://brand.phodal.com/logo/small.svg)
 
 Setup & Run
 ---
@@ -16,8 +17,6 @@ cordova run android
 
 License
 ---
-
-![Phodal Logo](http://brand.phodal.com/logo/small.svg)
 
 [![Phodal's Idea](http://brand.phodal.com/shields/idea-small.svg)](http://ideas.phodal.com/)
 
