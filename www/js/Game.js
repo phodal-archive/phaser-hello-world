@@ -23,7 +23,8 @@ Growth.Game.prototype = {
   },
   checkAnswer: function (otherAnswers, x, correctAnswer) {
     if (otherAnswers[x] === correctAnswer) {
-      Growth.scoreText = Growth.scoreText + 10;
+      Growth.score = Growth.score + 10;
+      Growth.scoreText.text = "Score: " + Growth.score ;
     }
   },
   drawAnswers: function (correctAnswer) {
