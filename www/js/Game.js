@@ -22,8 +22,7 @@ Growth.Game.prototype = {
     return _.shuffle(answers);
   },
   checkAnswer: function (otherAnswers, x, correctAnswer) {
-    console.log(otherAnswers, x, correctAnswer);
-    if(otherAnswers[x] === correctAnswer){
+    if (otherAnswers[x] === correctAnswer) {
       Growth.scoreText = Growth.scoreText + 10;
     }
   },
@@ -62,16 +61,16 @@ Growth.Game.prototype = {
   create: function () {
     this.drawScore();
     this.game.stage.backgroundColor = '#0072bc';
+
     var choiceLanguage = 'C';
-
-    var currentLanguageOriginText = this.game.cache.getText('language.' + choiceLanguage);
-    var currentLanguageTextArray = currentLanguageOriginText.split('\n');
-
-    this.renderText(currentLanguageTextArray);
+    this.renderText(choiceLanguage);
     this.drawAnswers(choiceLanguage);
   },
 
-  renderText: function (text) {
+  renderText: function (choiceLanguage) {
+    var currentLanguageOriginText = this.game.cache.getText('language.' + choiceLanguage);
+    var text = currentLanguageOriginText.split('\n');
+
     var style = {
       font: "20px Console",
       fill: "#fff",
