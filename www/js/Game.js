@@ -26,7 +26,7 @@ Growth.Game.prototype = {
       Growth.score = Growth.score + 10;
       Growth.scoreText.text = "Score: " + Growth.score ;
     }
-    this.state.start('ScoreScreen');
+    this.state.start('TransitionScreen');
   },
   drawAnswers: function (correctAnswer) {
     var self = this;

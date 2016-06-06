@@ -1,11 +1,10 @@
-Growth.ScoreScreen = function (game) {
+Growth.TransitionScreen = function (game) {
   this.game = game;
 };
 
-Growth.ScoreScreen.prototype = {
+Growth.TransitionScreen.prototype = {
 
   create: function () {
-    var self = this;
     this.game.stage.backgroundColor = "#424242";
 
     this.game.add.text(this.game.world.centerX - 100, this.game.world.centerY - 65, "You scored: " + Growth.score, Growth.scoreFont);
