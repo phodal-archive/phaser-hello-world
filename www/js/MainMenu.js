@@ -12,7 +12,7 @@ Growth.MainMenu.prototype = {
     graphics.drawRoundedRect(this.game.world.centerX - 100, this.game.world.centerY - 20, 200, 40, 6);
 
     var text = this.game.add.text(this.game.world.centerX - 50, this.game.world.centerY - 15, "开始游戏");
-
+    
     text.inputEnabled = true;
     text.fill = "#fff";
     text.buttonMode = true;

@@ -6,14 +6,25 @@ Growth.ScoreScreen.prototype = {
 
   create: function () {
     var self = this;
+    this.game.stage.backgroundColor = "#424242";
 
-    this.game.add.text(170, 100, "You scored: " + Growth.score, Growth.scoreFont);
-    this.game.add.text(170, 400, "press space to continue...");
+    this.game.add.text(this.game.world.centerX - 100, this.game.world.centerY - 65, "You scored: " + Growth.score, Growth.scoreFont);
 
-    var space_key = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-    space_key.onDown.add(function () {
-      self.game.state.start('Game');
-    }, this);
+    var graphics = this.game.add.graphics(0, 0);
+    // draw a rectangle
+    graphics.beginFill(0x424242);
+    graphics.lineStyle(1, 0xffffff, 1);
+    graphics.drawRoundedRect(this.game.world.centerX - 100, this.game.world.centerY - 20, 200, 40, 6);
+
+    var text = this.game.add.text(this.game.world.centerX - 50, this.game.world.centerY - 15, "继续游戏");
+
+    text.inputEnabled = true;
+    text.fill = "#fff";
+    text.buttonMode = true;
+    text.events.onInputDown.add(this.startGame, this);
+  },
+  startGame: function () {
+    this.game.state.start('Game')
   }
 
 };
