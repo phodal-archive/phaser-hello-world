@@ -62,7 +62,7 @@ Growth.Game.prototype = {
     this.drawScore();
     this.game.stage.backgroundColor = '#0072bc';
 
-    var choiceLanguage = 'C';
+    var choiceLanguage = Growth.languages[_.random(Growth.languages.length)];
     this.renderText(choiceLanguage);
     this.drawAnswers(choiceLanguage);
   },
