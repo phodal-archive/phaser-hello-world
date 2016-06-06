@@ -9,14 +9,14 @@ Growth.Game.prototype = {
     if (Growth.scoreText != null) {
       Growth.scoreText.kill();
     }
-    var scoreFont = {
+    Growth.scoreFont = {
       fontSize: "28px",
       fill: "#FFFFFF",
       wordWrap: true,
       wordWrapWidth: 400,
       align: "center"
     };
-    Growth.scoreText = this.game.add.text(this.game.width - 140, 10, "Score: " + Growth.score, scoreFont);
+    Growth.scoreText = this.game.add.text(this.game.width - 140, 10, "Score: " + Growth.score, Growth.scoreFont);
   },
   shuffle: function (answers) {
     return _.shuffle(answers);
@@ -26,6 +26,7 @@ Growth.Game.prototype = {
       Growth.score = Growth.score + 10;
       Growth.scoreText.text = "Score: " + Growth.score ;
     }
+    this.state.start('ScoreScreen');
   },
   drawAnswers: function (correctAnswer) {
     var self = this;
@@ -65,7 +66,7 @@ Growth.Game.prototype = {
 
     var number = _.random(Growth.languages.length - 1);
     var choiceLanguage = Growth.languages[number];
-    
+
     this.renderText(choiceLanguage);
     this.drawAnswers(choiceLanguage);
   },

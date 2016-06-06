@@ -3,7 +3,8 @@ Growth = {
   music: null,
   orientated: false,
   languages: [],
-  scoreText: null
+  scoreText: null,
+  scoreFont: null
 };
 
 Growth.Boot = function (game) {

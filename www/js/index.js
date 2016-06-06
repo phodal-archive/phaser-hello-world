@@ -43,6 +43,7 @@ var app = {
     game.state.add('Preloader', Growth.Preloader);
     game.state.add('MainMenu', Growth.MainMenu);
     game.state.add('Game', Growth.Game);
+    game.state.add('ScoreScreen', Growth.ScoreScreen);
 
     game.state.start('Boot');
   }
