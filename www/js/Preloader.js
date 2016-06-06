@@ -10,8 +10,31 @@ Growth.Preloader.prototype = {
     this.load.text('language.Java', 'data/Java.Java');
     this.load.text('language.JavaScript', 'data/JavaScript.js');
     this.load.text('language.PHP', 'data/PHP.php');
+    this.load.text('language.Arduino.ino', 'data/Arduino.ino');
+    this.load.text('language.ASP.asp', 'data/ASP.asp');
+    this.load.text('language.BASH.bash', 'data/BASH.bash');
+    this.load.text('language.BATCH.bat', 'data/BATCH.bat');
+    this.load.text('language.CoffeeScript.coffee', 'data/CoffeeScript.coffee');
+    this.load.text('language.CSharp.cs', 'data/CSharp.cs');
+    this.load.text('language.DOS.bat', 'data/DOS.bat');
+    this.load.text('language.Fortran.f90', 'data/Fortran.f90');
+    this.load.text('language.Lua.lua', 'data/Lua.lua');
+    this.load.text('language.Markdown.md', 'data/Markdown.md');
+    this.load.text('language.MATLAB.m', 'data/MATLAB.m');
+    this.load.text('language.MySQL.sql', 'data/MySQL.sql');
+    this.load.text('language.Node.js', 'data/Node.js');
+    this.load.text('language.Octave.octave', 'data/Octave.octave');
+    this.load.text('language.Python.py', 'data/Python.py');
+    this.load.text('language.Python3.py', 'data/Python3.py');
+    this.load.text('language.Ruby.py', 'data/Ruby.py');
+    this.load.text('language.Shell.sh', 'data/Shell.sh');
+    this.load.text('language.VisualBasic.vb', 'data/VisualBasic.vb');
+    this.load.text('language.XML.xml', 'data/XML.xml');
     Growth.languages = [
-      'C', 'CSS', 'HTML', 'Java', 'JavaScript', 'PHP'
+      'C', 'CSS', 'HTML', 'Java', 'JavaScript', 'PHP', "Arduino.ino", "ASP.asp", "BASH.bash", "BATCH.bat",
+      "CoffeeScript.coffee", "CSharp.cs", "DOS.bat", "Fortran.f90", "Lua.lua", "Markdown.md", "MATLAB.m",
+      "MySQL.sql", "Node.js", "Octave.octave", "Python.py", "Python3.py", "Ruby.py", "Shell.sh", "VisualBasic.vb",
+      "XML.xml"
     ]
   },
   preload: function () {
