@@ -15,7 +15,7 @@ Growth.Preloader.prototype = {
     ]
   },
   preload: function () {
-    this.game.stage.backgroundColor = "#eee";
+    this.game.stage.backgroundColor = "#424242";
     this.loadLanguages();
     this.load.image('logo', 'images/logo.png');
   },
