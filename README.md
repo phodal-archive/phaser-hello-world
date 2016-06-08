@@ -1,9 +1,5 @@
 #Learn Phaser with Cordova development Mobile Game
 
-A Clone of [https://github.com/phodal/learning-ionic](https://github.com/phodal/learning-ionic), but use Phaser.
-
-![Phodal Logo](http://brand.phodal.com/logo/small.svg)
-
 Setup & Run
 ---
 
