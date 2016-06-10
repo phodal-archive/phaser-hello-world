@@ -32,7 +32,7 @@ Growth.Preloader.prototype = {
     this.load.text('language.XML', 'data/XML.xml');
     Growth.languages = [
       'C', 'CSS', 'HTML', 'Java', 'JavaScript', 'PHP', 'Arduino', 'ASP', 'BASH', 'BATCH', 'CoffeeScript', 'CSharp',
-      'DOS', 'Fortran.f90', 'Lua', 'Markdown', 'MATLAB', 'MySQL', 'Node', 'Octave', 'Python', 'Python3', 'Ruby',
+      'DOS', 'Fortran', 'Lua', 'Markdown', 'MATLAB', 'MySQL', 'Node', 'Octave', 'Python', 'Python3', 'Ruby',
       'Shell', 'VisualBasic', 'XML'
     ]
   },
