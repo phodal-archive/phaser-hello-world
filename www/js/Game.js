@@ -45,7 +45,7 @@ Growth.Game.prototype = {
     for (var i = 0; i < otherAnswers.length; i++) {
       var answerButtonStyle = {
         fontSize: "24px",
-        fill: "#FFFFFF",
+        fill: "#328332",
         wordWrap: true,
         wordWrapWidth: 400,
         align: "center"
@@ -62,7 +62,7 @@ Growth.Game.prototype = {
   },
   create: function () {
     this.drawScore();
-    this.game.stage.backgroundColor = '#0072bc';
+    this.game.stage.backgroundColor = '#424242';
 
     var number = _.random(Growth.languages.length - 1);
     var choiceLanguage = Growth.languages[number];
@@ -77,7 +77,7 @@ Growth.Game.prototype = {
 
     var style = {
       font: "20px Console",
-      fill: "#fff",
+      fill: "#328332",
       wordWrap: true,
       wordWrapWidth: this.game.width,
       align: "center"
