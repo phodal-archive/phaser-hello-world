@@ -50,7 +50,7 @@ Growth.Game.prototype = {
         wordWrapWidth: 400,
         align: "center"
       };
-      var answerButton = this.game.add.text(180 + (this.game.width - 180) / 3 * i, 250, otherAnswers[i], answerButtonStyle);
+      var answerButton = this.game.add.text(40 + (this.game.width - 40) / 3 * i, 250, otherAnswers[i], answerButtonStyle);
       answerButton.smoothed = false;
       answerButton.inputEnabled = true;
       (function (x) {
