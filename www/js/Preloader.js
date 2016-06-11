@@ -40,6 +40,9 @@ Growth.Preloader.prototype = {
     this.game.stage.backgroundColor = "#424242";
     this.loadLanguages();
     this.load.image('logo', 'images/logo.png');
+    this.load.path = 'images/particles/';
+    this.load.images(['pixel_white', '4x4']);
+
   },
   create: function () {
     var self = this;

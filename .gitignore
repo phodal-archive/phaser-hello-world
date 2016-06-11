@@ -1,4 +1,5 @@
 platforms/
 plugins/
 www/js/lib/phaser.js
+www/js/lib/particle-storm.js
 bower_components/
