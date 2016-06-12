@@ -23,7 +23,7 @@ Growth.TransitionScreen.prototype = {
     var grd = text.context.createLinearGradient(0, 0, 0, text.height);
 
     //  Add in 2 color stops
-    grd.addColorStop(0, '#8ED6FF');
+    grd.addColorStop(0, '#ffffff');
     grd.addColorStop(1, '#004CB3');
 
     //  And apply to the Text
@@ -46,15 +46,15 @@ Growth.TransitionScreen.prototype = {
 
     this.game.stage.backgroundColor = "#424242";
 
-    this.game.add.text(this.game.world.centerX - 100, this.game.world.centerY - 65, "You scored: " + Growth.score, Growth.scoreFont);
+    // this.game.add.text(this.game.world.centerX - 100, this.game.world.centerY - 65, "You scored: " + Growth.score, Growth.scoreFont);
 
     var graphics = this.game.add.graphics(0, 0);
     // draw a rectangle
     graphics.beginFill(0x424242);
     graphics.lineStyle(1, 0xffffff, 1);
-    graphics.drawRoundedRect(this.game.world.centerX - 100, this.game.world.centerY - 20, 200, 40, 6);
+    graphics.drawRoundedRect(this.game.world.centerX - 100, this.game.world.centerY + 120, 200, 40, 6);
 
-    var text = this.game.add.text(this.game.world.centerX - 50, this.game.world.centerY - 15, "继续游戏");
+    var text = this.game.add.text(this.game.world.centerX - 50, this.game.world.centerY + 125, "继续游戏");
 
     text.inputEnabled = true;
     text.fill = "#fff";
