@@ -1,11 +1,13 @@
-#Learn Phaser with Cordova development Mobile Game
+#Phaser hello,world Game
 
-Setup & Run
+Setup & Run on Mobile
 ---
 
 ```
 npm install -g cordova
 ```
+
+Run
 
 ```
 cordova run android
