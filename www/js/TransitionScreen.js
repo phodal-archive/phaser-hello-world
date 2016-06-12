@@ -20,10 +20,6 @@ Growth.TransitionScreen.prototype = {
     manager.addData('basic', data);
 
     var text = game.add.text(-100, -100, 'DONE', {font: '32px serif'});
-
-    //  This adds a linear gradient to the Text object, which we can
-    //  reflect in our particles using the setColor and setAlpha properties.
-
     var grd = text.context.createLinearGradient(0, 0, 0, text.height);
 
     //  Add in 2 color stops
@@ -33,24 +29,12 @@ Growth.TransitionScreen.prototype = {
     //  And apply to the Text
     text.fill = grd;
 
-    //  Create a Text Zone, which is a special kind of zone that
-    //  allows you to emit particles based on the pixels in a Phaser Text object.
-
     var textZone = manager.createTextZone(text);
-
-    //  This scales the Text Zone otherwise it's quite tiny to read.
-
     textZone.scale.set(4);
 
     var emitter = manager.createEmitter();
-
     emitter.addToWorld();
 
-    //  Here we're using 'full: true' to emit one particle for every pixel in the
-    //  Text Zone. The delay allows them to fall away in sequence.
-    //
-    //  The setColor and setAlpha tell the particles to tint themselves to match
-    //  the colors found in the Phaser.Text object.
 
     emitter.emit('basic', 150, 150, {
       zone: textZone,
