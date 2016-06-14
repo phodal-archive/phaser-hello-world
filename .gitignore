@@ -3,3 +3,5 @@ plugins/
 www/js/lib/phaser.js
 www/js/lib/particle-storm.js
 bower_components/
+www/helloworld.js
+www/helloworld.min.js

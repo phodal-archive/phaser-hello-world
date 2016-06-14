@@ -7,15 +7,15 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
 
-    compile_dir: 'www/js',
+    compile_dir: 'www',
 
     helloworld: [
-      'src/index.js',
-      'src/Boot.js',
-      'src/Preloader.js',
-      'src/MainMenu.js',
-      'src/Game.js',
-      'src/TransitionScreen.js'
+      'www/js/index.js',
+      'www/js/Boot.js',
+      'www/js/Preloader.js',
+      'www/js/MainMenu.js',
+      'www/js/Game.js',
+      'www/js/TransitionScreen.js'
     ],
 
     clean: ['<%= compile_dir %>'],
@@ -47,6 +47,6 @@ module.exports = function (grunt) {
 
   });
 
-  grunt.registerTask('default', ['clean', 'concat', 'uglify', 'copy']);
+  grunt.registerTask('default', ['concat', 'uglify', 'copy']);
 
 };
