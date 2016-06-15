@@ -44,7 +44,7 @@ Growth.Preloader.prototype = {
     this.load.text('language.Linux-x86','data/Linux-x86.nasm');
     this.load.text('language.Lisp','data/Lisp.lsp');
     this.load.text('language.Morsecode', 'data/Morsecode');
-    this.load.text('language.Objective-C.m', 'data/Objective-C.m');
+    this.load.text('language.Objective-C', 'data/Objective-C.m');
     this.load.text('language.Perl','data/Perl.pl');
     this.load.text('language.PostScript','data/PostScript.ps');
     this.load.text('language.R','data/R.R');
@@ -58,7 +58,7 @@ Growth.Preloader.prototype = {
       'DOS', 'Fortran', 'Lua', 'Markdown', 'MATLAB', 'MySQL', 'Node', 'Octave', 'Python', 'Python3', 'Ruby',
       'Shell', 'VisualBasic', 'XML', 'ActionScript3', 'AppleScript', 'Assembler_intel', 'CLisp', 'Clojure', 'DART',
       'Delphi', 'Erlang', 'Go', 'Groovy', 'Jade', 'Linux-x86', 'Lisp', 'Morsecode', 'Objective-C', 'Perl', 'PostScript',
-      'R.R', 'Rust', 'Scala', 'Swift', 'Tcl', 'Tk'
+      'R', 'Rust', 'Scala', 'Swift', 'Tcl', 'Tk'
 ]
   },
   preload: function () {
