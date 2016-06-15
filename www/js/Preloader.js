@@ -30,36 +30,49 @@ Growth.Preloader.prototype = {
     this.load.text('language.Shell', 'data/Shell.sh');
     this.load.text('language.VisualBasic', 'data/VisualBasic.vb');
     this.load.text('language.XML', 'data/XML.xml');
-    this.load.text('language.ActionScript3','data/ActionScript3.as');
-    this.load.text('language.AppleScript','data/AppleScript.scpt');
-    this.load.text('language.Assembler','data/Assembler_intel.asm');
-    this.load.text('language.CLisp','data/CLisp.lisp');
-    this.load.text('language.Clojure','data/Clojure.clj');
-    this.load.text('language.DART','data/DART.dart');
-    this.load.text('language.Delphi','data/Delphi.delphi');
-    this.load.text('language.Erlang','data/Erlang.erl');
-    this.load.text('language.Go','data/Go.go');
-    this.load.text('language.Groovy','data/Groovy.groovy');
-    this.load.text('language.Jade','data/Jade.jade');
-    this.load.text('language.Linux-x86','data/Linux-x86.nasm');
-    this.load.text('language.Lisp','data/Lisp.lsp');
+    this.load.text('language.ActionScript3', 'data/ActionScript3.as');
+    this.load.text('language.AppleScript', 'data/AppleScript.scpt');
+    this.load.text('language.Assembler', 'data/Assembler_intel.asm');
+    this.load.text('language.CLisp', 'data/CLisp.lisp');
+    this.load.text('language.Clojure', 'data/Clojure.clj');
+    this.load.text('language.DART', 'data/DART.dart');
+    this.load.text('language.Delphi', 'data/Delphi.delphi');
+    this.load.text('language.Erlang', 'data/Erlang.erl');
+    this.load.text('language.Go', 'data/Go.go');
+    this.load.text('language.Groovy', 'data/Groovy.groovy');
+    this.load.text('language.Jade', 'data/Jade.jade');
+    this.load.text('language.Linux-x86', 'data/Linux-x86.nasm');
+    this.load.text('language.Lisp', 'data/Lisp.lsp');
     this.load.text('language.Morsecode', 'data/Morsecode');
     this.load.text('language.Objective-C', 'data/Objective-C.m');
-    this.load.text('language.Perl','data/Perl.pl');
-    this.load.text('language.PostScript','data/PostScript.ps');
-    this.load.text('language.R','data/R.R');
-    this.load.text('language.Rust','data/Rust.rs');
-    this.load.text('language.Scala','data/Scala.scala');
-    this.load.text('language.Swift','data/Swift.swift');
-    this.load.text('language.Tcl','data/Tcl.tcl');
-    this.load.text('language.Tk','data/Tk.tk');
+    this.load.text('language.Perl', 'data/Perl.pl');
+    this.load.text('language.PostScript', 'data/PostScript.ps');
+    this.load.text('language.R', 'data/R.R');
+    this.load.text('language.Rust', 'data/Rust.rs');
+    this.load.text('language.Scala', 'data/Scala.scala');
+    this.load.text('language.Swift', 'data/Swift.swift');
+    this.load.text('language.Tcl', 'data/Tcl.tcl');
+    this.load.text('language.Tk', 'data/Tk.tk');
+    this.load.text('language.Awk', 'data/Awk.awk');
+    this.load.text('language.Haskell', 'data/Haskell.hs');
+    this.load.text('language.LaTeX', 'data/LaTeX.tex');
+    this.load.text('language.LLVM', 'data/LLVM.ll');
+    this.load.text('language.Logo', 'data/Logo.logo');
+    this.load.text('language.M4', 'data/M4.m4');
+    this.load.text('language.Ocaml', 'data/Ocaml.ml');
+    this.load.text('language.Prolog', 'data/Prolog.pro');
+    this.load.text('language.Smalltalk', 'data/Smalltalk.sm');
+    this.load.text('language.TeX', 'data/TeX.tex');
+    this.load.text('language.VHDL', 'data/VHDL.vhdl');
+    this.load.text('language.VimScript', 'data/VimScript.vim');
+
     Growth.languages = [
       'C', 'CSS', 'HTML', 'Java', 'JavaScript', 'PHP', 'Arduino', 'ASP', 'BASH', 'BATCH', 'CoffeeScript', 'CSharp',
       'DOS', 'Fortran', 'Lua', 'Markdown', 'MATLAB', 'MySQL', 'Node', 'Octave', 'Python', 'Python3', 'Ruby',
       'Shell', 'VisualBasic', 'XML', 'ActionScript3', 'AppleScript', 'Assembler_intel', 'CLisp', 'Clojure', 'DART',
       'Delphi', 'Erlang', 'Go', 'Groovy', 'Jade', 'Linux-x86', 'Lisp', 'Morsecode', 'Objective-C', 'Perl', 'PostScript',
-      'R', 'Rust', 'Scala', 'Swift', 'Tcl', 'Tk'
-]
+      'R', 'Rust', 'Scala', 'Swift', 'Tcl', 'Tk', 'Awk', 'Haskell', 'LaTeX', 'LLVM', 'Logo', 'M4', 'Ocaml', 'Prolog',
+      'Smalltalk', 'TeX', 'VHDL', 'VimScript']
   },
   preload: function () {
     this.game.stage.backgroundColor = "#424242";
